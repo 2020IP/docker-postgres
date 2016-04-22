@@ -1,7 +1,7 @@
 FROM postgres:9.5
 MAINTAINER Jarrod Alexander <jarroda@2020research.com>
 
-ENV PLV8_VERSION 1.5.3
+ENV PLV8_VERSION 1.4.8
 
 RUN apt-get update \
     && apt-get install -y g++ make libv8-dev git-core postgresql-server-dev-${PG_MAJOR} \
