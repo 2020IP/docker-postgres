@@ -11,7 +11,7 @@ RUN apt-get update \
     && make all install \
     && echo 'CREATE EXTENSION plv8;' > /docker-entrypoint-initdb.d/plv8.sql \
     && rm -rf /usr/rc/plv8 \
-    && apt-get -y purge g++ make libv8-dev git-core postgresql-server-dev-${PG_MAJOR} \
+    && apt-get -y purge g++ make git-core postgresql-server-dev-${PG_MAJOR} \
     && apt-get -y autoremove \
     && apt-get -y clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
