@@ -5,7 +5,7 @@ The `2020ip/postgres` image provides a Docker container running Postgres 9.5 wit
 ## Usage
 The container can be ran with:
 ```
-docker run -p 5432:5432 --env POSTGRES_PASSWORD=myPassword POSTGRES_USER=postgres -d 2020ip/postgres
+docker run -p 5432:5432 --env POSTGRES_PASSWORD=myPassword --env POSTGRES_USER=postgres -d 2020ip/postgres
 ```
 
 This image is based on the offical Postgres image, so see its documentation for all options.
